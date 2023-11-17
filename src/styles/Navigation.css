@@ -1,0 +1,38 @@
+.navigation-div {
+  position: fixed;
+  margin-top: 0.5rem;
+}
+
+.hamburger-wikiqedia-div {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  left: 1rem;
+  margin-left: 1.5rem;
+}
+.hamburger-menu {
+  display: flex;
+  align-items: center;
+  justify-content: "space-between";
+  height: 1.8rem;
+  width: 1.8rem;
+  margin-top: 0.7rem;
+}
+.hamburger-menu:hover {
+  background-color: rgba(0, 24, 73, 0.027);
+}
+.wikiqedia-home-a {
+  margin-left: 0.6rem;
+}
+.wikiqedia {
+  font-family: "Hoefler Text";
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.encyclopedia {
+  font-family: "Hoefler Text";
+  font-size: 1rem;
+}
+
+

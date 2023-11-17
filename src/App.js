@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { useMediaQuery } from "react-responsive";
+import Navigation from "./components/Navigation";
+import MainContent from "./components/MainContent";
+import "./styles/App.css";
 
 function App() {
+  const isMobileNavigation = useMediaQuery({
+    query: "(min-width:1001px)",
+  });
+
+  const isMobileLayout = useMediaQuery({
+    query: "(min-width:691px)",
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="app-background">
+        <Navigation />
+        <MainContent
+          isMobileLayout={isMobileLayout}
+          isMobileNavigation={isMobileNavigation}
+        />
+      </div>
     </div>
   );
 }

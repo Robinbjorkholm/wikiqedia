@@ -1,0 +1,60 @@
+.information-div {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: 10%;
+  border: 1px solid #a2a9b1;
+  background-color: #f8f9fa;
+}
+.information-header {
+  padding-top: 0.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+.information-image {
+  padding-top: 1rem;
+  width: 80%;
+  max-width: 12rem;
+
+  margin: 0 auto;
+}
+#caption-table {
+  font-size: 0.7rem;
+  padding-bottom: 0.1rem;
+}
+.information-table {
+  border-spacing: 0.4rem;
+}
+.information-table-name {
+  width: 33%;
+  vertical-align: top;
+  text-align: left;
+  margin-right: 1rem;
+  font-size: 0.8rem;
+}
+
+.information-table-div {
+  display: flex;
+  flex-direction: column;
+}
+.information-table-p {
+  font-size: 0.8rem;
+  padding-bottom: 0.1rem;
+}
+#signature {
+  font-weight: bold;
+  margin: 0 auto;
+  font-size: 0.8rem;
+}
+#signature-img {
+  width: 75%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 43.125em) {
+  .information-div {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+}

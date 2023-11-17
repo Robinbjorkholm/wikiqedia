@@ -1,0 +1,73 @@
+.side-navigation-menu-div {
+  position: relative;
+  padding-top: 50%;
+  margin-left: 2.5rem;
+}
+.contents-header {
+  color: #54595d;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #54595d3d;
+  width: 100%;
+}
+.side-navigation-ul {
+  list-style: none;
+  height: 20rem;
+}
+.side-navigation-ul-nested {
+  max-width: 95%;
+  overflow-wrap: break-word;
+  display: Flex;
+}
+
+.side-navigation-icon {
+  color: #54595d;
+  position: absolute;
+  left: -1.3rem;
+}
+.side-navigation-icon:hover {
+  background-color: rgba(0, 24, 73, 0.027);
+}
+
+.side-navigation-title {
+  list-style: none;
+  margin-bottom: 0.8rem;
+  width: 100%;
+  font-size: 0.9rem;
+}
+.Active {
+  color: black;
+  text-shadow: 0px 0px 1px black;
+}
+.side-navigation-title-under-div-hidden {
+  transition: all 0.1s;
+  display: none;
+}
+.side-navigation-title-under-div-show {
+  transition: all 0.1s;
+  display: block;
+}
+.side-navigation-button-open {
+  transition: all 0.1s;
+}
+.side-navigation-button-close {
+  transition: all 0.1s;
+  transform: rotate(90deg);
+}
+
+.side-navigation-title-under-li {
+  list-style: none;
+  margin-bottom: 0.8rem;
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+}
+.side-navigation-title:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .side-navigation-menu-div {
+    display: none;
+  }
+}

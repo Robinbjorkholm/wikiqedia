@@ -1,0 +1,146 @@
+.main-content-div {
+  width: 100%;
+}
+#main-content {
+  width: 80%;
+  position: absolute;
+  left: 15rem;
+  padding-right: 3rem;
+  padding-top: 7rem;
+}
+#main-content-header {
+  margin: 0 auto;
+  max-width: 62.5em;
+  margin-left: 4rem;
+}
+.flex-div-components {
+  display: flex;
+  margin: 0 auto;
+  max-width: 62.5em;
+  margin-left: 4rem;
+}
+.flex-div {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#flex-right {
+  min-width: 18.75em;
+}
+
+#robin-b {
+  font-weight: 1;
+  font-size: 1.8rem;
+}
+.section-separator-header {
+  border-top: 1px solid #c8ccd1;
+  width: 100%;
+}
+.section-separator-with-img {
+  display: block;
+  border-top: 1px solid #c8ccd1;
+  width: 98%;
+  padding-bottom: 0.5rem;
+}
+.section-separator {
+  border-top: 1px solid #c8ccd1;
+  max-width: 100%;
+  margin-right: 1rem;
+  padding-bottom: 0.5rem;
+}
+.section-with-img {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.tldr {
+  color: #202122;
+  font-size: 1.2rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+.introduction-header {
+  padding-top: 1rem;
+  height: 4.5rem;
+}
+
+.information-p {
+  line-height: 1.6rem;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+}
+.asd {
+  min-height: 12rem;
+}
+.section-header {
+  font-size: 1.3rem;
+  font-family: "Linux Libertine", "Georgia", "Times", "Source Serif Pro", serif;
+}
+
+.information-img-div {
+  border: 1px solid #c8ccd1;
+  background-color: #f8f9fa;
+  padding: 0.3rem;
+  margin-right: 1rem;
+  margin-left: 0.5rem;
+  float: right;
+  width: min-content;
+}
+
+.information-img {
+  border: 1px solid #c8ccd1;
+  width: 8rem;
+  height: 8rem;
+}
+.pronounce {
+  font-style: oblique;
+}
+
+.image-caption {
+  font-size: 0.7rem;
+  word-wrap: break-word;
+  width: 8rem;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .main-content-div {
+    width: 100%;
+  }
+  #main-content-header {
+    margin: 0 auto;
+    padding: 0;
+  }
+  #main-content {
+    margin: 0 auto;
+    position: relative;
+    padding-right: 0;
+    width: 95%;
+    left: 0;
+  }
+  .flex-div-components {
+    width: 100%;
+    margin: 0 auto;
+    max-width: none;
+  }
+
+  .mobile {
+    width: 100vw;
+  }
+  .section-separator {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 43.125em) {
+  .information-div {
+    width: 50%;
+    min-width: 18em;
+  }
+  #flex-left {
+    width: 100%;
+  }
+  #flex-right {
+    display: none;
+  }
+}

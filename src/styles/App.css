@@ -1,0 +1,13 @@
+.app {
+  background-color: #f8f9fa;
+  max-width: 100%;
+}
+
+.app-background {
+  position: relative;
+  max-width: 100%;
+  width: 100rem;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  height: 150rem;
+}
