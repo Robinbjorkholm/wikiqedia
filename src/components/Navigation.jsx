@@ -4,7 +4,7 @@ import SideNavigation from "./SideNavigation";
 
 import "../styles/Navigation.css";
 
-function Navigation() {
+function Navigation({ toggleMobileNavigation, settoggleMobileNavigation }) {
   return (
     <div className="navigation-div">
       <div className="hamburger-wikiqedia-div">
@@ -16,7 +16,10 @@ function Navigation() {
           <p className="encyclopedia">The free Encyclopedia</p>
         </div>
       </div>
-      <SideNavigation />
+      <SideNavigation
+        toggleMobileNavigation={toggleMobileNavigation}
+        settoggleMobileNavigation={settoggleMobileNavigation}
+      />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import Navigation from "./components/Navigation";
 import MainContent from "./components/MainContent";
@@ -13,11 +13,24 @@ function App() {
     query: "(min-width:691px)",
   });
 
+  const [toggleMobileNavigation, settoggleMobileNavigation] = useState(true);
+
+  useEffect(() => {
+    if (isMobileNavigation === true) {
+      settoggleMobileNavigation(false);
+    }
+  }, [isMobileNavigation]);
+
   return (
     <div className="app">
       <div className="app-background">
-        <Navigation />
+        <Navigation
+          toggleMobileNavigation={toggleMobileNavigation}
+          settoggleMobileNavigation={settoggleMobileNavigation}
+        />
         <MainContent
+          toggleMobileNavigation={toggleMobileNavigation}
+          settoggleMobileNavigation={settoggleMobileNavigation}
           isMobileLayout={isMobileLayout}
           isMobileNavigation={isMobileNavigation}
         />

@@ -3,6 +3,23 @@
   padding-top: 50%;
   margin-left: 2.5rem;
 }
+.side-navigation-menu-div-mobile {
+  position: absolute;
+  margin-left: 1.5rem;
+  top: 9rem;
+  background-color: white;
+  border: 1px solid #c8ccd1;
+  width: 15rem;
+}
+
+.side-navigation-menu-div-mobile-sticky {
+  position: fixed;
+  margin-left: 1.5rem;
+  
+  background-color: white;
+  border: 1px solid #c8ccd1;
+  width: 15rem;
+}
 .contents-header {
   color: #54595d;
   margin-bottom: 0.5rem;
@@ -21,12 +38,13 @@
 }
 
 .side-navigation-icon {
-  color: #54595d;
+  background: none;
   position: absolute;
   left: -1.3rem;
+  border: none;
 }
 .side-navigation-icon:hover {
-  background-color: rgba(0, 24, 73, 0.027);
+  background-color: rgba(255, 24, 73, 0.057);
 }
 
 .side-navigation-title {
@@ -69,5 +87,15 @@
 @media only screen and (max-width: 62.5em) {
   .side-navigation-menu-div {
     display: none;
+  }
+  .side-navigation-icon {
+    left: 0.1rem;
+  }
+  .side-navigation-title {
+    padding-left: 1.5rem;
+  }
+  .contents-header {
+    padding-left: 1.5rem;
+    padding-top: 0.5rem;
   }
 }

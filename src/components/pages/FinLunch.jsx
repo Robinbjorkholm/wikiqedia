@@ -13,7 +13,7 @@ function FinLunch() {
         up and discuss the review within the comment section for that specific
         food review if there is something they agree or disagree on.
         <br />
-        <br />A live version is available <a>here</a>
+        <br />A live version is available <a href="">here</a>
         <br />
         Link to github repository&nbsp;
         <a

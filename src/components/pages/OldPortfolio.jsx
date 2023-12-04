@@ -12,7 +12,7 @@ function OldPortfolio() {
         First website he built in <b>React</b> with <b>express</b> &{" "}
         <b>mongoDB</b> backend to display his other coding projects and general
         information about him. <br />
-        <br />A live version is available <a>here</a>
+        <br />A live version is available <a href="">here</a>
         <br />
         Link to github repository&nbsp;
         <a

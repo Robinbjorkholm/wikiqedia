@@ -13,6 +13,20 @@
   max-width: 62.5em;
   margin-left: 4rem;
 }
+#header-flex {
+  align-items: center;
+  display: flex;
+}
+#name {
+  font-weight: lighter;
+}
+#name-icon {
+  display: none;
+}
+#name-icon-sticky {
+  display: none;
+}
+
 .flex-div-components {
   display: flex;
   margin: 0 auto;
@@ -130,6 +144,39 @@
   }
   .section-separator {
     width: 100%;
+  }
+  #name-text {
+    padding-left: 0.5rem;
+  }
+  #name-icon {
+    display: inline;
+    cursor: pointer;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    margin-left: -0.5rem;
+  }
+  #name-icon-sticky {
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    border: 1px solid grey;
+    display: inline;
+    position: fixed;
+    cursor: pointer;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding-left: 0.4rem;
+    padding-top: 0.5rem;
+    margin-top: -12rem;
+  }
+
+  #name-icon:hover {
+    background-color: rgba(255, 24, 73, 0.057);
+  }
+  #name-icon:focus {
+    border: 3px solid #3366cc;
+    padding: 0.3rem;
   }
 }
 @media only screen and (max-width: 43.125em) {

@@ -1,6 +1,7 @@
 .navigation-div {
-  position: fixed;
+  position: absolute;
   margin-top: 0.5rem;
+  z-index: 1;
 }
 
 .hamburger-wikiqedia-div {
@@ -34,5 +35,3 @@
   font-family: "Hoefler Text";
   font-size: 1rem;
 }
-
-

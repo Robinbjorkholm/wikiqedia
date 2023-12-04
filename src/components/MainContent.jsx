@@ -1,26 +1,61 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
+import { useInView } from "react-intersection-observer";
 import { TfiMenuAlt } from "react-icons/tfi";
-import RobinInformation from "./RobinInformation";
 import BeginningOfCodingJourney from "./pages/BeginningOfCodingJourney";
 import FirstBigProject from "./pages/FirstBigProject";
-import FirstLinesOfCode from "./pages/FirstLinesOfCode";
-import FirstStepsIntoSoftwareDevelopment from "./pages/FirstStepsIntoSoftwareDevelopment";
 import Projects from "./pages/Projects";
 import TLDR from "./pages/TLDR";
 import PersonalLife from "./pages/PersonalLife";
 import Introduction from "./pages/Introduction";
 import "../styles/MainContent.css";
 
-function MainContent({ isMobileLayout, isMobileNavigation }) {
+function MainContent({
+  isMobileLayout,
+  isMobileNavigation,
+  settoggleMobileNavigation,
+  toggleMobileNavigation,
+}) {
+  const { ref, inView, entry } = useInView({
+    threshold: 0,
+  });
+
+  const [stickyIcon, setstickyIcon] = useState(false);
+  useEffect(() => {
+    if (inView === true) {
+      setstickyIcon(false);
+    } else if (inView === false) {
+      setstickyIcon(true);
+    }
+  }, [inView]);
   return (
     <div className="main-content-div">
       <div id="main-content">
         <div id="main-content-header">
-          <h2 id="name">
-            <TfiMenuAlt size={24} />
-            Robin Björkholm
-          </h2>
+          <div id="header-flex">
+            <div id="name-icon" ref={ref}>
+              <TfiMenuAlt
+                size={24}
+                onClick={() =>
+                  settoggleMobileNavigation(!toggleMobileNavigation)
+                }
+              />
+            </div>
+            {stickyIcon ? (
+              <div id="name-icon-sticky">
+                <TfiMenuAlt
+                  size={24}
+                  onClick={() =>
+                    settoggleMobileNavigation(!toggleMobileNavigation)
+                  }
+                />
+              </div>
+            ) : null}
+
+            <h1 id="name">
+              <span id="name-text">Robin Björkholm</span>
+            </h1>
+          </div>
           <div className="section-separator-header" />
           <p className="tldr">
             Not interested about his story? Go to{" "}
@@ -36,7 +71,6 @@ function MainContent({ isMobileLayout, isMobileNavigation }) {
         <div className="flex-div-components">
           <div id="flex-left">
             <Introduction isMobileLayout={isMobileLayout} />
-
             <BeginningOfCodingJourney />
             <FirstBigProject />
             <Projects />
