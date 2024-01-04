@@ -8,28 +8,29 @@ import Projects from "./pages/Projects";
 import TLDR from "./pages/TLDR";
 import PersonalLife from "./pages/PersonalLife";
 import Introduction from "./pages/Introduction";
+import ProfessionalCareer from "./pages/ProfessionalCareer";
 import "../styles/MainContent.css";
+import "../styles/SideNavigation.css";
 
 function MainContent({
   isMobileLayout,
-  isMobileNavigation,
   settoggleMobileNavigation,
   toggleMobileNavigation,
+  stickyMobileNavigation,
+  setstickyMobileNavigation,
 }) {
   const { ref, inView, entry } = useInView({
     threshold: 0,
   });
 
-  const [stickyIcon, setstickyIcon] = useState(false);
   useEffect(() => {
     if (inView === true) {
-      setstickyIcon(false);
+      setstickyMobileNavigation(false);
     } else if (inView === false) {
-      setstickyIcon(true);
+      setstickyMobileNavigation(true);
     }
   }, [inView]);
   return (
-    <div className="main-content-div">
       <div id="main-content">
         <div id="main-content-header">
           <div id="header-flex">
@@ -41,7 +42,7 @@ function MainContent({
                 }
               />
             </div>
-            {stickyIcon ? (
+            {stickyMobileNavigation ? (
               <div id="name-icon-sticky">
                 <TfiMenuAlt
                   size={24}
@@ -74,12 +75,12 @@ function MainContent({
             <BeginningOfCodingJourney />
             <FirstBigProject />
             <Projects />
+            <ProfessionalCareer/>
             <PersonalLife />
             <TLDR />
           </div>
         </div>
       </div>
-    </div>
   );
 }
 

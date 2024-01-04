@@ -11,6 +11,7 @@ function Projects() {
       <div className="section-separator" />
       <div id="projects-parent-div">
         <OldPortfolio />
+        <div className="section-separator" />
         <FinLunch />
       </div>
       <br />

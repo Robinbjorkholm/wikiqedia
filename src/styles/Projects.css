@@ -8,7 +8,15 @@
   font-family: "Linux Libertine", "Georgia", "Times", "Source Serif Pro", serif;
 }
 
+.stack-used-ul {
+  font-weight: 100;
+}
 .stack-used-li {
-  margin-left: 1rem;
+  margin-left: 2rem;
   padding-top: 0.3rem;
+}
+@media only screen and (max-width: 62.5em) {
+  .stack-used-li {
+    font-weight: 400;
+  }
 }

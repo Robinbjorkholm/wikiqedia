@@ -77,6 +77,18 @@ function RobinInformation() {
               </div>
             </td>
           </tr>
+          <tr>
+            <th className="information-table-name">Email</th>
+            <td>
+              <div className="information-table-div">
+                <p className="information-table-p">
+                  <a href="mailto:bjorkholmrobin@gmail.com">
+                    bjorkholmrobin@gmail.com
+                  </a>
+                </p>
+              </div>
+            </td>
+          </tr>
         </tbody>
       </table>
       <p id="signature">Signature</p>

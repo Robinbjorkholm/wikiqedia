@@ -6,7 +6,7 @@ import "../../styles/tldr.css";
 
 function TLDR() {
   return (
-    <div>
+    <div className="test123">
       <p className="section-header" id="TL;DR">
         TL;DR
       </p>
@@ -22,12 +22,12 @@ function TLDR() {
         ]}
       />
       <UlList
-        name={"skills"}
+        name={"Skills"}
         stack={[
           "frontend - reactJS",
           "backend - Node.Js(express.js)",
           "Database - MySQL(sequelize) , MongoDB(Mongoose)",
-          "Problem solving",
+          "Problem solving (worked on my racecar for 5+ years that has been nothing but problem solving... 😪)",
         ]}
       />
       <UlListProject
@@ -55,17 +55,6 @@ function TLDR() {
           },
         ]}
       />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </div>
   );
 }

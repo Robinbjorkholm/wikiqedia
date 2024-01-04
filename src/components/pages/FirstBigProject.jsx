@@ -1,4 +1,5 @@
 import React from "react";
+import dayofrelease from "../../images/dayofrelease.png";
 
 function FirstBigProject() {
   return (
@@ -8,6 +9,16 @@ function FirstBigProject() {
         First big project
       </p>
       <div className="section-separator" />
+      <div className="information-img-div">
+        <a href={dayofrelease}>
+          <img
+            src={dayofrelease}
+            className="information-img"
+            alt="robin coding in 2021"
+          />
+        </a>
+        <p className="image-caption">Day of finlunch release</p>
+      </div>
       <p className="information-p">
         December 24th 2022 Robin started his first real software project, a web
         application about fastfood where he would post pictures and reviews of
@@ -18,11 +29,10 @@ function FirstBigProject() {
         In the end of 2023 the web application went online, a maxed out website
         using all the neccesary features for creating a next level food
         community.It had everything from creating users to admin accounts and
-        password resets truly built different
+        password resets truly built different.
         <br />
         Within the first 24 hours the web application already had 3+ registered
-        users, the number is growing to this day and investors don't see it
-        stopping anytime soon.
+        users.
       </p>
       <br />
     </div>

@@ -2,8 +2,7 @@ import React from "react";
 
 function stackUsed({ name, stack }) {
   return (
-    <div>
-      <br />
+    <div className="test1234">
       <ul className="stack-used-ul">
         <b>{name}</b>
         {stack.map((stack) => {
@@ -12,7 +11,7 @@ function stackUsed({ name, stack }) {
               {stack.projectName} -
               <a href={stack.githubLink} target="_blank" rel="noreferrer">
                 {" "}
-                github - 
+                github -
               </a>
               <a href={stack.githubLink} target="_blank" rel="noreferrer">
                 {" "}

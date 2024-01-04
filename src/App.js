@@ -12,14 +12,8 @@ function App() {
   const isMobileLayout = useMediaQuery({
     query: "(min-width:691px)",
   });
-
+  const [stickyMobileNavigation, setstickyMobileNavigation] = useState(false);
   const [toggleMobileNavigation, settoggleMobileNavigation] = useState(true);
-
-  useEffect(() => {
-    if (isMobileNavigation === true) {
-      settoggleMobileNavigation(false);
-    }
-  }, [isMobileNavigation]);
 
   return (
     <div className="app">
@@ -27,8 +21,12 @@ function App() {
         <Navigation
           toggleMobileNavigation={toggleMobileNavigation}
           settoggleMobileNavigation={settoggleMobileNavigation}
+          isMobileNavigation={isMobileNavigation}
+          stickyMobileNavigation={stickyMobileNavigation}
         />
         <MainContent
+          stickyMobileNavigation={stickyMobileNavigation}
+          setstickyMobileNavigation={setstickyMobileNavigation}
           toggleMobileNavigation={toggleMobileNavigation}
           settoggleMobileNavigation={settoggleMobileNavigation}
           isMobileLayout={isMobileLayout}

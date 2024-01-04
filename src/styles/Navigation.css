@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  left: 1rem;
+
   margin-left: 1.5rem;
 }
 .hamburger-menu {
@@ -34,4 +34,10 @@
 .encyclopedia {
   font-family: "Hoefler Text";
   font-size: 1rem;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .hamburger-wikiqedia-div {
+    margin-left: 0;
+  }
 }

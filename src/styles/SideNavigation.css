@@ -1,21 +1,29 @@
 .side-navigation-menu-div {
-  position: relative;
-  padding-top: 50%;
+  position: fixed;
   margin-left: 2.5rem;
+  padding-top: 8rem;
+}
+
+.side-navigation-menu-div-none {
+  display: none;
 }
 .side-navigation-menu-div-mobile {
   position: absolute;
-  margin-left: 1.5rem;
   top: 9rem;
   background-color: white;
   border: 1px solid #c8ccd1;
   width: 15rem;
 }
-
+.side-navigation-menu-div-mobile-nested {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #c8ccd1;
+  border-top: 0;
+  width: 15rem;
+}
 .side-navigation-menu-div-mobile-sticky {
   position: fixed;
-  margin-left: 1.5rem;
-  
+  top: 3.5rem;
   background-color: white;
   border: 1px solid #c8ccd1;
   width: 15rem;
@@ -97,5 +105,8 @@
   .contents-header {
     padding-left: 1.5rem;
     padding-top: 0.5rem;
+  }
+  .side-navigation-title-under-li {
+    margin-left: 2.5rem;
   }
 }

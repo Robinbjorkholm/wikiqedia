@@ -21,7 +21,8 @@ function PersonalLife() {
       </div>
       <p className="information-p">
         Not much is known about Robins personal life other than that he likes to
-        build cars in his freetime{" "}
+        build his race car in his freetime and has been spotted at the gym, he
+        is also an excellent chef and loves cats 😼
       </p>
       <br />
     </div>
