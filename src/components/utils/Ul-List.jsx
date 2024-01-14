@@ -14,7 +14,7 @@ function stackUsed({ name, stack, github }) {
         })}
       </ul>
       <br />
-     
+      <br />
     </div>
   );
 }

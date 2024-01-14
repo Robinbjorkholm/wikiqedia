@@ -6,7 +6,7 @@ import "../../styles/tldr.css";
 
 function TLDR() {
   return (
-    <div className="test123">
+    <div id="TL;DR" className="section">
       <p className="section-header" id="TL;DR">
         TL;DR
       </p>
@@ -15,12 +15,14 @@ function TLDR() {
         name={"About"}
         stack={[
           calculateAge("1998/07/08", 2) + " years old",
-          "coded as a hobby for about " +
+          "first line of code written about " +
             calculateAge("2019/09/03", 5) +
-            " years",
+            " years ago",
           "speaking Swedish, Finnish and English",
+          "Living in Pietarsaari",
         ]}
       />
+
       <UlList
         name={"Skills"}
         stack={[
@@ -41,7 +43,7 @@ function TLDR() {
           {
             projectName: "Old portfolio - react, express, MongoDB",
             githubLink: "https://github.com/Robinbjorkholm/portfolio",
-            liveVersion: "",
+            liveVersion: "https://steady-belekoy-283f9a.netlify.app/",
           },
           {
             projectName: " New portfolio wikiqedia - react",

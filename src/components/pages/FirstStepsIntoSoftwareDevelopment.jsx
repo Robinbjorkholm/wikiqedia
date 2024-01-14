@@ -2,16 +2,11 @@ import React from "react";
 
 function FirstStepsIntoSoftwareDevelopment() {
   return (
-    <div >
-      {" "}
-      <p
-        className="section-header"
-        id="First Steps Into Software Development"
-      >
+    <div id="First Steps Into Software Development" className="section">
+      <p className="section-header" id="First Steps Into Software Development">
         First steps into software development
       </p>
       <div className="section-separator" />
-      <div className="test">
         <p className="information-p">
           A year had passed since his attempt at building a game when he read in
           the newsletter that a university was hosting a coding bootcamp for the
@@ -32,8 +27,6 @@ function FirstStepsIntoSoftwareDevelopment() {
           </a>
           (pronounced as <span className="pronounce">"dot net"</span>).
         </p>
-        <br />
-      </div>
     </div>
   );
 }

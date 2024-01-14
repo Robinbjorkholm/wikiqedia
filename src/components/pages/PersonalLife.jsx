@@ -3,7 +3,7 @@ import rollcage from "../../images/rollcage.jpg";
 
 function PersonalLife() {
   return (
-    <div className="asd" id="Personal Life">
+    <div id="Personal Life" className="section">
       {" "}
       <p className="section-header" id="First Steps Into Software Development">
         Personal life

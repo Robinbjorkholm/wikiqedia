@@ -3,8 +3,7 @@ import dayofrelease from "../../images/dayofrelease.png";
 
 function FirstBigProject() {
   return (
-    <div className="section-div">
-      {" "}
+    <div id="First Big Project" className="section">
       <p className="section-header" id="First Big Project">
         First big project
       </p>
@@ -34,7 +33,6 @@ function FirstBigProject() {
         Within the first 24 hours the web application already had 3+ registered
         users.
       </p>
-      <br />
     </div>
   );
 }

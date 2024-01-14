@@ -4,14 +4,14 @@ import FinLunch from "./FinLunch";
 
 function Projects() {
   return (
-    <div>
+    <div id="Projects" className="section">
       <p className="section-header" id="Projects">
         Projects
       </p>
       <div className="section-separator" />
       <div id="projects-parent-div">
         <OldPortfolio />
-        <div className="section-separator" />
+        <br></br>
         <FinLunch />
       </div>
       <br />

@@ -1,37 +1,26 @@
-import React, { useEffect, useState } from "react";
-import { useMediaQuery } from "react-responsive";
-import Navigation from "./components/Navigation";
-import MainContent from "./components/MainContent";
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  Navigate,
+} from "react-router-dom";
+
 import "./styles/App.css";
+import MainPage from "./components/pages/MainPage";
 
 function App() {
-  const isMobileNavigation = useMediaQuery({
-    query: "(min-width:1001px)",
-  });
-
-  const isMobileLayout = useMediaQuery({
-    query: "(min-width:691px)",
-  });
-  const [stickyMobileNavigation, setstickyMobileNavigation] = useState(false);
-  const [toggleMobileNavigation, settoggleMobileNavigation] = useState(true);
-
   return (
     <div className="app">
       <div className="app-background">
-        <Navigation
-          toggleMobileNavigation={toggleMobileNavigation}
-          settoggleMobileNavigation={settoggleMobileNavigation}
-          isMobileNavigation={isMobileNavigation}
-          stickyMobileNavigation={stickyMobileNavigation}
-        />
-        <MainContent
-          stickyMobileNavigation={stickyMobileNavigation}
-          setstickyMobileNavigation={setstickyMobileNavigation}
-          toggleMobileNavigation={toggleMobileNavigation}
-          settoggleMobileNavigation={settoggleMobileNavigation}
-          isMobileLayout={isMobileLayout}
-          isMobileNavigation={isMobileNavigation}
-        />
+        <Router>
+          <Routes>
+            <Route exact index element={<Navigate to="/robinbjorkholm" />} />
+            <Route exact path="/robinbjorkholm" element={<MainPage />} />
+            <Route path="*" element={<Navigate to="/robinbjorkholm" />} />
+          </Routes>
+        </Router>
       </div>
     </div>
   );

@@ -32,8 +32,8 @@ function MainContent({
   }, [inView]);
   return (
       <div id="main-content">
-        <div id="main-content-header">
-          <div id="header-flex">
+        <div className="main-content-header" id="(Top)">
+          <div id="header-flex"  >
             <div id="name-icon" ref={ref}>
               <TfiMenuAlt
                 size={24}

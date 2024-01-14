@@ -13,14 +13,15 @@ function stackUsed({ name, stack }) {
                 {" "}
                 github -
               </a>
-              <a href={stack.githubLink} target="_blank" rel="noreferrer">
+              <a href={stack.liveVersion} target="_blank" rel="noreferrer">
                 {" "}
                 Live version
               </a>
             </li>
           );
         })}
-      </ul>
+      </ul>{" "}
+      <br /> 
     </div>
   );
 }

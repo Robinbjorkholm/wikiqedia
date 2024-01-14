@@ -11,17 +11,18 @@ function SideScrollBar({
   stickyMobileNavigation,
 }) {
   const [toggleMenu, settoggleMenu] = useState([]);
- 
+  const [underTitleActive, setunderTitleActive] = useState(false);
+
   return (
     <div id="side-navigation">
       {isMobileNavigation ? (
-        <div  className="side-navigation-menu-div">
+        <div className="side-navigation-menu-div">
           <p className="contents-header">Contents</p>
           <ul className="side-navigation-ul">
             {navigationInfo.map((info, id) => {
               return (
                 <ul key={id} className="side-navigation-ul-nested">
-                  {info.underTitle ? (
+                  {info.underTitle && (
                     <button
                       className="side-navigation-icon"
                       onClick={() => {
@@ -30,6 +31,7 @@ function SideScrollBar({
                             (title) => title !== info.id
                           );
                           settoggleMenu(newTogglemenu);
+                          setunderTitleActive(true);
                         } else settoggleMenu((titles) => [...titles, info.id]);
                       }}
                     >
@@ -42,10 +44,13 @@ function SideScrollBar({
                         }
                       />
                     </button>
-                  ) : null}
+                  )}
                   <Link
-                    activeClass="Active"
+                    activeClass={
+                      info.underTitle ? "active-light" : "active-dark"
+                    }
                     spy={true}
+                    offset={-150}
                     to={info.title[0]}
                     smooth={true}
                     duration={250}
@@ -61,18 +66,26 @@ function SideScrollBar({
                             : "side-navigation-title-under-div-hidden"
                         }
                       >
-                        {info.underTitle
-                          ? info.underTitle.map((underTitle, id) => {
-                              return (
+                        {info.underTitle &&
+                          info.underTitle.map((underTitle, id) => {
+                            return (
+                              <Link
+                                activeClass="active-dark"
+                                spy={true}
+                                offset={-150}
+                                to={info.title[0]}
+                                smooth={true}
+                                duration={250}
+                              >
                                 <li
                                   className="side-navigation-title-under-li"
                                   key={id}
                                 >
                                   {underTitle}
                                 </li>
-                              );
-                            })
-                          : null}
+                              </Link>
+                            );
+                          })}
                       </div>
                     </div>
                   </Link>
@@ -142,18 +155,17 @@ function SideScrollBar({
                               : "side-navigation-title-under-div-hidden"
                           }
                         >
-                          {info.underTitle
-                            ? info.underTitle.map((underTitle, id) => {
-                                return (
-                                  <li
-                                    className="side-navigation-title-under-li"
-                                    key={id}
-                                  >
-                                    {underTitle}
-                                  </li>
-                                );
-                              })
-                            : null}
+                          {info.underTitle &&
+                            info.underTitle.map((underTitle, id) => {
+                              return (
+                                <li
+                                  className="side-navigation-title-under-li"
+                                  key={id}
+                                >
+                                  {underTitle}
+                                </li>
+                              );
+                            })}
                         </div>
                       </div>
                     </Link>

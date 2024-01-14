@@ -13,7 +13,14 @@ function FinLunch() {
         up and discuss the review within the comment section for that specific
         food review if there is something they agree or disagree on.
         <br />
-        <br />A live version is available <a href="">here</a>
+        <br />A live version is available{" "}
+        <a
+          href="65a30694389b9c0a1f9b5555--regal-cuchufli-0486a5.netlify.app
+65a30694389b9c0a1f9b5555--regal-cuchufli-0486a5.netlify.app
+"
+        >
+          <b>Here</b>
+        </a>
         <br />
         Link to github repository&nbsp;
         <a
@@ -21,7 +28,7 @@ function FinLunch() {
           target="_blank"
           rel="noreferrer"
         >
-          here
+          <b>Here</b>
         </a>
       </p>
       <br />

@@ -2,7 +2,7 @@ import React from "react";
 
 function FirstLinesOfCode() {
   return (
-    <div id="test">
+    <div id="First Lines Of Code" className="section">
       <p className="section-header" id="First Lines Of Code">
         First lines of code
       </p>
@@ -35,7 +35,6 @@ function FirstLinesOfCode() {
         to building his game with his new skills but was unable to add collision
         to his character so he gave up on programming.
       </p>
-      <br />
     </div>
   );
 }
