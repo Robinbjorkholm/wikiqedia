@@ -127,9 +127,9 @@
   .main-content-div {
     width: 100%;
   }
-  #main-content-header {
-    margin: 0 auto;
+  .main-content-header {
     padding: 0;
+    margin-left: 0;
   }
   #main-content {
     margin: 0 auto;

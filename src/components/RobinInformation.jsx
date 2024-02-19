@@ -38,7 +38,7 @@ function RobinInformation() {
             <th className="information-table-name">Education</th>
             <td>
               <div className="information-table-div">
-                <p className="information-table-p">youtube and Stack Overflow</p>
+                <p className="information-table-p">Youtube and Stack Overflow</p>
               </div>
             </td>
           </tr>
