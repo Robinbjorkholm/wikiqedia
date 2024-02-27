@@ -11,20 +11,23 @@ function FinLunch() {
         First real website built in <b>React</b> with <b>express</b> &{" "}
         <b>MySQL</b> backend to upload food reviews, other users can also sign
         up and discuss the review within the comment section for that specific
-        food review if there is something they agree or disagree on.
+        food review. A more indepth review is available on{" "}
+        <a href="https://github.com/Robinbjorkholm/FInlunch">
+          <span className="pronounce">GitHub</span>
+        </a>
         <br />
         <br />A live version is available{" "}
         <a href="https://superlative-cheesecake-27dd1d.netlify.app/">
-          <b>Here</b>
+          <span className="pronounce">Here</span>
         </a>
         <br />
-        Link to github repository&nbsp;
+        Link to GitHub repository&nbsp;
         <a
           href="https://github.com/Robinbjorkholm/FInlunch"
           target="_blank"
           rel="noreferrer"
         >
-          <b>Here</b>
+          <span className="pronounce">Here</span>
         </a>
       </p>
       <br />

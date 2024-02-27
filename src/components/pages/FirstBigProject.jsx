@@ -25,12 +25,12 @@ function FirstBigProject() {
         getting scammed buying something that wasn't what they thought it would
         be)
         <br />
-        In the end of 2023 the web application went online, a maxed out website
-        using all the neccesary features for creating a next level food
+        At the start of 2024 the web application went online, a maxed out
+        website using all the necessary features for creating a next level food
         community.It had everything from creating users to admin accounts and
         password resets truly built different.
         <br />
-        Within the first 24 hours the web application already had 3+ registered
+        Within the first 24 hours the web application already had 2 registered
         users.
       </p>
     </div>

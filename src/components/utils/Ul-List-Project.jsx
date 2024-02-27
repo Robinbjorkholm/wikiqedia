@@ -11,17 +11,17 @@ function stackUsed({ name, stack }) {
               {stack.projectName} -
               <a href={stack.githubLink} target="_blank" rel="noreferrer">
                 {" "}
-                github -
+                <span className="pronounce">GitHub -</span>
               </a>
               <a href={stack.liveVersion} target="_blank" rel="noreferrer">
                 {" "}
-                Live version
+                <span className="pronounce">Live version</span>
               </a>
             </li>
           );
         })}
       </ul>{" "}
-      <br /> 
+      <br />
     </div>
   );
 }

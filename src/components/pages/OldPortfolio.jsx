@@ -14,16 +14,16 @@ function OldPortfolio() {
         information about him. <br />
         <br />A live version is available{" "}
         <a href="https://steady-belekoy-283f9a.netlify.app/">
-          <b>Here</b>
+          <span className="pronounce">Here</span>
         </a>
         <br />
-        Link to github repository&nbsp;
+        Link to GitHub repository&nbsp;
         <a
           href="https://github.com/Robinbjorkholm/portfolio"
           target="_blank"
           rel="noreferrer"
         >
-          <b>Here</b>
+          <span className="pronounce">Here</span>
         </a>
       </p>
       <br />

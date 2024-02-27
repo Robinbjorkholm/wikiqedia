@@ -10,12 +10,7 @@ function Introduction({ isMobileLayout }) {
         <p className="information-p">
           <b> Robin Alexander Björkholm </b>
           (born july 8, 1998) is a Finnish-Swedish, self-taught software
-          developer.CEO for the famous{" "}
-          <a href="https://www.w3schools.com/html/html_entities.asp">
-            {" "}
-            finlunch
-          </a>{" "}
-          web application.
+          developer, Volvo and Cat expert
         </p>
         <br />
         <FirstLinesOfCode />
