@@ -15,10 +15,10 @@ function TLDR() {
         name={"About"}
         stack={[
           calculateAge("1998/07/08", 2) + " years old",
-          "first line of code written about " +
+          "First line of code written about " +
             calculateAge("2019/09/03", 5) +
             " years ago",
-          "speaking Swedish, Finnish and English",
+          "Speaking Swedish, Finnish and English",
           "Living in Pietarsaari",
         ]}
       />
@@ -26,7 +26,7 @@ function TLDR() {
       <UlList
         name={"Skills"}
         stack={[
-          "Frontend - reactJS",
+          "Frontend - ReactJS",
           "Backend - Node.Js(express.js)",
           "Database - MySQL(sequelize) , MongoDB(Mongoose)",
           "Problem solving (worked on my racecar for 5+ years that has been nothing but problem solving... 😪)",
@@ -36,19 +36,19 @@ function TLDR() {
         name={"Projects(best to worst)"}
         stack={[
           {
-            projectName: "Finlunch - react, express, MySQL",
+            projectName: "Finlunch - React, Express, MySQL",
             githubLink: "https://github.com/Robinbjorkholm/FInlunch",
             liveVersion: "https://superlative-cheesecake-27dd1d.netlify.app/",
           },
           {
-            projectName: "Old portfolio - react, express, MongoDB",
+            projectName: "Old portfolio - React, express, MongoDB",
             githubLink: "https://github.com/Robinbjorkholm/portfolio",
             liveVersion: "https://steady-belekoy-283f9a.netlify.app/",
           },
           {
-            projectName: " New portfolio wikiqedia - react",
+            projectName: " New portfolio wikiqedia - React",
             githubLink: "https://github.com/Robinbjorkholm",
-            liveVersion: "",
+            liveVersion: "https://wikiqedia.netlify.app/",
           },
           {
             projectName: "number guessing - C#, WPF",
