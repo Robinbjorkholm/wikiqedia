@@ -32,10 +32,10 @@ function BeginningOfCodingJourney() {
         </a>
         <br />
         He researched and bought an online "Fullstack" course about
-        React.Afterwards he built a simple website that had a button and a
+        React. He built a simple website that had a button and a
         number, everytime you clicked the button the number incremented, he
         instantly got hooked with web development and got alot of ideas for
-        projects that would make him big bucks,but in order to build real
+        projects but in order to build real
         applications you had to build something called a{" "}
         <a
           href="https://en.wikipedia.org/wiki/Frontend_and_backend"
@@ -61,13 +61,13 @@ function BeginningOfCodingJourney() {
         >
           <span className="pronounce"> Express</span>
         </a>{" "}
-        a backend framework for{" "}
+        a Backend framework for{" "}
         <a
           href="https://en.wikipedia.org/wiki/Node.js"
           target="_blank"
           rel="noreferrer"
         >
-          <span className="pronounce">NodeJs</span>
+          <span className="pronounce">Node.Js</span>
         </a>
         .
       </p>
