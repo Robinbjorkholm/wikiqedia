@@ -13,8 +13,8 @@ function Introduction({ isMobileLayout }) {
           developer and cat expert
         </p>
         <br />
-        <FirstLinesOfCode />
         {!isMobileLayout && <RobinInformation />}
+        <FirstLinesOfCode />
         <FirstStepsIntoSoftwareDevelopment />
       </div>{" "}
       <div id="flex-right"> {isMobileLayout && <RobinInformation />}</div>
