@@ -35,10 +35,20 @@ function RobinInformation() {
             </td>
           </tr>
           <tr>
+            <th className="information-table-name">Language</th>
+            <td>
+              <div className="information-table-div">
+                <p className="information-table-p">Swedish, Finnish, English</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
             <th className="information-table-name">Education</th>
             <td>
               <div className="information-table-div">
-                <p className="information-table-p">Youtube and Stack Overflow</p>
+                <p className="information-table-p">
+                  Youtube and Stack Overflow
+                </p>
               </div>
             </td>
           </tr>
