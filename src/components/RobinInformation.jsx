@@ -1,6 +1,6 @@
 import React from "react";
 import calculateAge from "./utils/calculateAge";
-import image from "../images/image.jpg";
+
 import asd from "../images/123.jpg";
 import signature from "../images/signature.svg";
 import "../styles/RobinInformation.css";
