@@ -10,7 +10,7 @@ function Introduction({ isMobileLayout }) {
         <p className="information-p">
           <b> Robin Alexander Björkholm </b>
           (born july 8, 1998) is a Finnish-Swedish, self-taught software
-          developer and cat expert
+          developer.
         </p>
         <br />
         {!isMobileLayout && <RobinInformation />}
