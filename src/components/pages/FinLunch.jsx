@@ -8,7 +8,7 @@ function FinLunch() {
       <p className="ul-header">FinLunch</p>
       <br />
       <p className="information-p">
-        First real website built in <b>React</b> with <b>express</b> &{" "}
+        First real webapp built in <b>React</b> with <b>express</b> &{" "}
         <b>MySQL</b> backend to upload food reviews, other users can also sign
         up and discuss the review within the comment section for that specific
         food review. A more indepth review is available on{" "}
