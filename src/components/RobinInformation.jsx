@@ -47,7 +47,10 @@ function RobinInformation() {
             <td>
               <div className="information-table-div">
                 <p className="information-table-p">
-                  Youtube and Stack Overflow
+                  Youtube, Stack Overflow{" "}
+                  <a href="https://net.centria.fi/en/project/h2c/">
+                    Highway2Code
+                  </a>
                 </p>
               </div>
             </td>
