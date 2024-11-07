@@ -10,7 +10,7 @@ const navigationInfo = [
   {
     id: 6,
     title: ["Projects"],
-    underTitle: ["Old portfolio", "Finlunch"],
+    underTitle: ["Old portfolio", "Finlunch","RobinSpeedShop"],
   },
   { id: 7, title: ["Professional Career"] },
   { id: 8, title: ["Personal Life"] },

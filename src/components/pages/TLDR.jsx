@@ -26,7 +26,8 @@ function TLDR() {
       <UlList
         name={"Skills"}
         stack={[
-          "Frontend - ReactJS",
+          "Frontend - ReactJS,NextJs",
+
           "Backend - Node.Js(express.js)",
           "Database - MySQL(sequelize) , MongoDB(Mongoose)",
           "Problem solving (worked on my racecar for 5+ years that has been nothing but problem solving... 😪)",
@@ -39,6 +40,10 @@ function TLDR() {
             projectName: "Finlunch - React, Express, MySQL",
             githubLink: "https://github.com/Robinbjorkholm/FInlunch",
             liveVersion: "https://superlative-cheesecake-27dd1d.netlify.app/",
+          },
+          {
+            projectName: "robinspeedshop(under construction) - Nextjs14,mongodb",
+            githubLink: "https://github.com/Robinbjorkholm/robinspeedshop",
           },
           {
             projectName: "Old portfolio - React, express, MongoDB",

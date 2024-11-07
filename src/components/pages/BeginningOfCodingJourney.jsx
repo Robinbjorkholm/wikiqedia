@@ -33,43 +33,9 @@ function BeginningOfCodingJourney() {
         <br />
         He researched and bought an online "Fullstack" course about
         React. He built a simple website that had a button and a
-        number, everytime you clicked the button the number incremented, he
-        instantly got hooked with web development and got alot of ideas for
-        projects but in order to build real
-        applications you had to build something called a{" "}
-        <a
-          href="https://en.wikipedia.org/wiki/Frontend_and_backend"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <span className="pronounce"> Backend </span>
-        </a>{" "}
-        and react was only used for the{" "}
-        <a
-          href="https://en.wikipedia.org/wiki/Frontend_and_backend"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <span className="pronounce"> Frontend. </span>
-        </a>
-        <br />
-        In the fullstack course he bought there was also a course about{" "}
-        <a
-          href="https://en.wikipedia.org/wiki/Express.js"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <span className="pronounce"> Express</span>
-        </a>{" "}
-        a Backend framework for{" "}
-        <a
-          href="https://en.wikipedia.org/wiki/Node.js"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <span className="pronounce">Node.Js</span>
-        </a>
-        .
+        number, everytime you clicked the button the number incremented.
+      
+        
       </p>
     </div>
   );
